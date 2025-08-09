@@ -4,7 +4,7 @@ runConfig:
 buildConfig:
   runtime: nodejs22
   commands:
-    - npm ci --omit=dev
+    - npm ci
     
 env:
   - variable: NODE_ENV
@@ -16,4 +16,5 @@ env:
     value: ""
     availability:
       - BUILD
+      - RUNTIME
 
